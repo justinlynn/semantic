@@ -52,7 +52,7 @@ import           Instances ()
 
 assertJQExpressionSucceeds :: Show a => Directive.Directive -> a -> Term (Ann Span :+: Core) Name -> HUnit.Assertion
 assertJQExpressionSucceeds directive tree core = do
-  preludesrc <- ByteString.readFile "semantic-python/src/Prelude.score"
+  preludesrc <- ByteString.readFile "src/Prelude.score"
   let ePrelude = Trifecta.parseByteString (Core.Parser.core <* Trifecta.eof) mempty preludesrc
   prelude <- case Trifecta.foldResult (Left . show) Right ePrelude of
     Right r -> pure r
@@ -83,7 +83,7 @@ assertJQExpressionSucceeds directive tree core = do
 
 fixtureTestTreeForFile :: HasCallStack => Path.RelFile -> Tasty.TestTree
 fixtureTestTreeForFile fp = HUnit.testCaseSteps (Path.toString fp) $ \step -> withFrozenCallStack $ do
-  let fullPath  = Path.relDir "semantic-python/test/fixtures" </> fp
+  let fullPath  = Path.relDir "test/fixtures" </> fp
       perish s  = liftIO (HUnit.assertFailure ("Directive parsing error: " <> s))
       isComment = (== Just '#') . fmap fst . ByteString.uncons
 
@@ -122,7 +122,7 @@ fixtureTestTreeForFile fp = HUnit.testCaseSteps (Path.toString fp) $ \step -> wi
 
 milestoneFixtures :: IO Tasty.TestTree
 milestoneFixtures = do
-  files <- liftIO (Path.filesInDir (Path.relDir "semantic-python/test/fixtures"))
+  files <- liftIO (Path.filesInDir (Path.relDir "test/fixtures"))
   let pythons = sort (filter (Path.hasExtension ".py") files)
   pure $ Tasty.testGroup "Translation" (fmap fixtureTestTreeForFile pythons)
 

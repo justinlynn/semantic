@@ -1,0 +1,72 @@
+resolver: lts-13.23
+packages:
+  - '.'
+  - 'semantic-analysis'
+  - 'semantic-ast'
+  - 'semantic-core'
+  - 'semantic-java'
+  - 'semantic-json'
+  - 'semantic-python'
+  - 'semantic-source'
+  - 'semantic-tags'
+
+extra-deps:
+- fused-effects-0.5.0.1@sha256:a2f5fcd127afbe57a18e0d6c4edb5fee3d4a50411b1007773e250e69f16f3055,4387
+- fused-effects-exceptions-0.2.0.0@sha256:a4925cdf5fd57a7ed5e603e1d8d1de0f227654d0137b9643d0b3807804f2ff08,1123
+- ansi-terminal-0.9@sha256:24e357bccd882add0d9caee63136d6b7923aaa9e36ed515097230dca82b0065c,3154
+- streaming-concurrency-0.3.1.3@sha256:b46503a07a2877b71db70e10c10e33577c854904a14b3db0964a91d1d0933f79,2666
+- streaming-with-0.2.2.1@sha256:f5f354c9d1ed9358bf91792a2804c897544b170b2891b6c0ee61120605f0327c,1280
+- time-compat-1.9.2.2@sha256:9998dc1b77b5067572ab708e94750f1061152f342e92ad1aba38aae63581174d,4209
+- hedgehog-1.0.1@sha256:b65b1ebde7b7fe8e693070916e45aa2ed63eea5e3f84ac3a8f9a0b7f8fcf0337,4465
+- pretty-simple-3.1.0.0@sha256:d9d045de35be6a2d78a9b3b38d39b13caba96c0ef5ba9d4b44b9b7c2c50e7fa1,4129
+- tasty-hedgehog-1.0.0.1@sha256:f632aa57399fbd9a0910757bd550e702e13752f9fd1fced0cc9e6b54dd49c7d8,1823
+- tree-sitter-java-0.4.0.0@sha256:9d2fda4c03773ecec9826c7de060382d8e429c4a3110cb4af914ee25547c8200,1964
+- tree-sitter-json-0.3.0.0@sha256:acace225905971aca81ea09d5c7830ec92d4ac519e34c464bb879b35e69cf8cd,2002
+- unordered-containers-0.2.10.0@sha256:5e9b095a9283d9e2f064fec73a81a6b6ea0b7fda3f219a8175785d2d2a3de204,5199
+- fastsum-0.1.1.0@sha256:bbc8c27b6dc100a94cef28ab1bebe38155cd95e00e8d27e025a137c8b74118e2,2280
+- generic-monoid-0.1.0.0@sha256:372875d12742b97befaacbd08a35c2e73cc3821a3b7a09ec1b17a079d0b24ff7,856
+- semilattices-0.0.0.4@sha256:333707e460923711d1edbdd02ebe1c3957d4e0808eab9886747b52ee3e443639,1909
+- yaml-0.11.1.2@sha256:cbc4ddb233c564967aad27ee47c1cd8fd6a06b9183353e76fe66c9be7c9dfd76,5109
+- lingo-0.3.0.0@sha256:aca2f51328443ab0ebc7362da75bd89e395912324d134063a18076c6ce298083,1899
+- proto-lens-0.5.1.0@sha256:d959c40aabda1ab208a64b0c5abb5519e7956b665275b38beb4c812f51f95987,3266
+- proto-lens-runtime-0.5.0.0@sha256:cb39cf13ce4f7dac5414f94a7afe0adc9b831312e6b60588a23bd816accc385f,3132
+- tree-sitter-0.5.0.0@sha256:3ff8434b27adbdea4171ae1ff1fe62989d9e013916eafc50ec88bf2cbe61a822,4024
+- tree-sitter-go-0.2.0.1@sha256:75c5ec045c032f09255b85dc48beab51cd051ea94d944b5a85d5eff25e76fc24,1374
+- tree-sitter-php-0.2.0.1@sha256:f17011161efe73e0986a3f19c59bca0ad697f3b6b15f97d2b34e17c8e4261576,1475
+- tree-sitter-python-0.6.0.0@sha256:58a611d0a320c247a83cd8eadf50ac6da0332a6c8dca6dfa7d17f9c107e0234d,2602
+- tree-sitter-ruby-0.2.0.1@sha256:719970130bf4b9817985dff28ea53bb41db901070ee4c62867b72b0dacb5ecdb,1488
+- tree-sitter-tsx-0.2.1.1@sha256:79a6d412648b68d1fdf4de79c34f7f5ed83378d985baadcb1c4d0397cc8a6203,1606
+- tree-sitter-typescript-0.2.1.1@sha256:e0c2f1672614a1e55f84c798b1a706a075b77ffa0b73e034e8050904fabc2bd1,1654
+- Glob-0.10.0@sha256:bbccaf21bff9071dcf369f55cc1a07250bdc84c432bdf4277ed53e5e2327cd7d,2947
+- aeson-1.4.5.0@sha256:451b48781e6f85102675778b54cd8f0e0cafa5bdf950c2989223cc22f9baa20e,6964
+- streaming-process-0.1.0.0@sha256:53bb66b7983cf6173d30e02f61a0c62d8bfca36caa7f295c7cdb40cc620a46f4,2232
+- tasty-1.2.3@sha256:bba67074e5326d57e8f53fc1dabcb6841daa4dc51b053506eb7f40a6f49a0497,2517
+- tasty-hunit-0.10.0.2@sha256:8e8bd5807cec650f5aebc5ada07b57620c863e69145e65249651c1b48d97bd70,1515
+- git: 'https://github.com/rewinfrey/hspec-expectations-pretty-diff'
+  commit: 94af5871c24ba319f7f72fefa53c1a4d074c9a29
+- git: 'https://github.com/joshvera/proto3-suite.git'
+  commit: 83f3352f0c7c94ea091e6087f60692eda9991fae
+- git: 'https://github.com/joshvera/proto3-wire.git'
+  commit: 84664e22f01beb67870368f1f88ada5d0ad01f56
+- git: 'https://github.com/tclem/proto-lens-jsonpb.git'
+  commit: 'e4d10b77f57ee25beb759a33e63e2061420d3dc2'
+- git: 'https://github.com/antitypical/fused-syntax.git'
+  commit: '5b7512db962d5b3f973002615b8bc86ab074d5aa'
+# Suppress errors associated with the -nopie option being passed to clang.
+# https://github.com/commercialhaskell/stack/issues/4009
+apply-ghc-options: everything
+ghc-options:
+  $everything: -optc -Wno-unused-command-line-argument
+
+# Build in an Alpine Docker image
+# cf. https://github.com/jkachmar/alpine-haskell-stack
+#
+# Needs 'alpine-sdk ncurses-dev ncurses-static zlib-dev'
+#
+# Note that distributing statically linked applications using libgmp is not
+# compliant with the LGPL; these applications should be built with a version
+# of GHC that supports integer-simple for MIT-license compliant distribution
+docker:
+  enable: false
+  repo: "alpine-haskell-gmp:semantic"
+  stack-exe: image

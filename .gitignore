@@ -3,8 +3,6 @@
 .docsets
 .stack-work
 .stack-work-profiling
-stack.yaml
-stack.yaml.lock
 profiles
 /tags
 
